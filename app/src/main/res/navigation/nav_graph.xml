@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/findFragment2">
+
+    <fragment
+        android:id="@+id/findFragment2"
+        android:name="id.ac.ui.cs.mobileprogramming.muhammadrizkidarmawan.boredapp.fragment.FindFragment"
+        android:label="FindFragment" >
+        <action
+            android:id="@+id/action_findFragment2_to_activityFragment2"
+            app:destination="@id/activityFragment2" />
+        <action
+            android:id="@+id/action_findFragment2_to_aboutMeFragment"
+            app:destination="@id/aboutMeFragment" />
+        <action
+            android:id="@+id/action_findFragment2_to_timerFragment"
+            app:destination="@id/timerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment2"
+        android:name="id.ac.ui.cs.mobileprogramming.muhammadrizkidarmawan.boredapp.fragment.ActivityFragment"
+        android:label="ActivityFragment" />
+    <fragment
+        android:id="@+id/aboutMeFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.muhammadrizkidarmawan.boredapp.fragment.AboutMeFragment"
+        android:label="fragment_about_me"
+        tools:layout="@layout/fragment_about_me" >
+        <action
+            android:id="@+id/action_aboutMeFragment_to_glFragment"
+            app:destination="@id/glFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/glFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.muhammadrizkidarmawan.boredapp.fragment.glFragment"
+        android:label="fragment_gl"
+        tools:layout="@layout/fragment_gl" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.muhammadrizkidarmawan.boredapp.fragment.TimerFragment"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
+</navigation>

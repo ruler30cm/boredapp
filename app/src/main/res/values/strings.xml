@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">boredapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="timer_length_key">id.ac.ui.cs.mobileprogramming.muhammadrizkidarmawan.boredapp.timer_length</string>
+</resources>
